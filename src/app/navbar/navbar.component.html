@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <span>My Awesome Website</span>
+  <span class="example-spacer"></span>
+  <button mat-flat-button color="primary" [matMenuTriggerFor]="menu">
+    <mat-icon>language</mat-icon>
+    {{ selectedLanguage }}
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>English</button>
+    <button mat-menu-item>Hindi</button>
+  </mat-menu>
+</mat-toolbar>
