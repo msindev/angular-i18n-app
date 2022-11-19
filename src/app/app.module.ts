@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarModule } from './navbar/navbar.module';
+import { RegisterModule } from './register/register.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +15,7 @@ import { NavbarModule } from './navbar/navbar.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     NavbarModule,
+    RegisterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

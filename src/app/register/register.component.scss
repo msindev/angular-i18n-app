@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+
+    mat-card{
+        min-width: 40vw;
+    }
+
+    mat-card-header{
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    mat-card-title{
+        text-align: center;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two-columns{
+        display: flex;
+        justify-content: space-between;
+    }
+}
