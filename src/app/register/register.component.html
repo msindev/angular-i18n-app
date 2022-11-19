@@ -10,7 +10,7 @@
     <mat-card-content>
       <form class="form">
         <div class="two-columns">
-          <mat-form-field floatLabel="always">
+          <mat-form-field floatLabel="always" class="small-margin">
             <mat-label>First Name</mat-label>
             <input matInput placeholder="John" />
           </mat-form-field>
@@ -31,7 +31,7 @@
           <mat-label>Confirm Password</mat-label>
           <input type="password" matInput placeholder="********" />
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field floatLabel="always">
           <mat-label>Date of Birth</mat-label>
           <input matInput [matDatepicker]="picker" />
           <mat-datepicker-toggle
@@ -39,6 +39,15 @@
             [for]="picker"
           ></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field floatLabel="always">
+          <mat-label>Gender</mat-label>
+          <mat-select>
+            <mat-option value="male">Male</mat-option>
+            <mat-option value="female">Female</mat-option>
+            <mat-option value="others">Others</mat-option>
+            <mat-option value="not_specified">Prefer Not to Say</mat-option>
+          </mat-select>
         </mat-form-field>
         <button mat-raised-button color="primary">Register</button>
       </form>
