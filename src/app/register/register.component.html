@@ -1,9 +1,11 @@
 <div class="container">
   <mat-card>
     <mat-card-header>
-      <mat-card-title>Register</mat-card-title>
-      <mat-card-subtitle
-        >To use our product, please register with the following
+      <mat-card-title i18n="Title for Registration Form"
+        >Register</mat-card-title
+      >
+      <mat-card-subtitle i18n="Subtitle for Registration Form">
+        To use our product, please register with the following
         details</mat-card-subtitle
       >
     </mat-card-header>
@@ -11,28 +13,38 @@
       <form class="form">
         <div class="two-columns">
           <mat-form-field floatLabel="always" class="small-margin">
-            <mat-label>First Name</mat-label>
-            <input matInput placeholder="John" />
+            <mat-label i18n="First Name Input Label">First Name</mat-label>
+            <input
+              matInput
+              placeholder="John"
+              i18n-placeholder="Placeholder for first name input"
+            />
           </mat-form-field>
           <mat-form-field floatLabel="always">
-            <mat-label>Last Name</mat-label>
-            <input matInput placeholder="Smith" />
+            <mat-label i18n="Last Name Input Label">Last Name</mat-label>
+            <input
+              matInput
+              placeholder="Smith"
+              i18n-placeholder="Placeholder for Last name input"
+            />
           </mat-form-field>
         </div>
         <mat-form-field floatLabel="always">
-          <mat-label>Email</mat-label>
+          <mat-label i18n="Email Input Label">Email</mat-label>
           <input type="email" matInput placeholder="email@xyz.com" />
         </mat-form-field>
         <mat-form-field floatLabel="always">
-          <mat-label>Password</mat-label>
+          <mat-label i18n="Password Input Label">Password</mat-label>
           <input type="password" matInput placeholder="********" />
         </mat-form-field>
         <mat-form-field floatLabel="always">
-          <mat-label>Confirm Password</mat-label>
+          <mat-label i18n="Confirm Password Input Label"
+            >Confirm Password</mat-label
+          >
           <input type="password" matInput placeholder="********" />
         </mat-form-field>
         <mat-form-field floatLabel="always">
-          <mat-label>Date of Birth</mat-label>
+          <mat-label i18n="Date of Birth Input Label">Date of Birth</mat-label>
           <input matInput [matDatepicker]="picker" />
           <mat-datepicker-toggle
             matIconSuffix
@@ -41,21 +53,27 @@
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
         <mat-form-field floatLabel="always">
-          <mat-label>Gender</mat-label>
+          <mat-label i18n="Gender Input Label">Gender</mat-label>
           <mat-select>
-            <mat-option value="male">Male</mat-option>
-            <mat-option value="female">Female</mat-option>
-            <mat-option value="others">Others</mat-option>
-            <mat-option value="not_specified">Prefer Not to Say</mat-option>
+            <mat-option value="male" i18n="Male">Male</mat-option>
+            <mat-option value="female" i18n="Female">Female</mat-option>
+            <mat-option value="others" i18n="Other gender">Others</mat-option>
+            <mat-option
+              value="not_specified"
+              i18n="Preferred not to say for Gender"
+              >Prefer Not to Say</mat-option
+            >
           </mat-select>
         </mat-form-field>
-        <button mat-raised-button color="primary">Register</button>
+        <button mat-raised-button color="primary" i18n="Submit button for form">
+          Register
+        </button>
       </form>
     </mat-card-content>
     <mat-card-footer>
       <mat-card-actions>
-        <span>Already registered?</span>
-        <a routerLink="/login">Login </a>
+        <span i18n="Already registered message">Already registered?</span>
+        <a routerLink="/login" i18n="Link to Login Page">Login </a>
       </mat-card-actions>
     </mat-card-footer>
   </mat-card>
