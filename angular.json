@@ -33,8 +33,7 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "localize":true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -76,7 +75,7 @@
               "browserTarget": "angular-i18n-app:build:development"
             },
             "hi":{
-              "browserTarget":"angular-i18n-app:build:development,hi"
+              "browserTarget":"angular-i18n-app:build:hi"
             }
           },
           "defaultConfiguration": "development"

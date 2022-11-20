@@ -6,8 +6,12 @@
     {{ selectedLanguage }}
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item *ngFor="let language of availableLanguagesDropdown">
-      {{ language }}
+    <button
+      mat-menu-item
+      *ngFor="let language of availableLanguages"
+      (click)="changeLocale(language.code)"
+    >
+      {{ language.name }}
     </button>
   </mat-menu>
 </mat-toolbar>
