@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2358657418304879537" datatype="html">
+        <source>My Awesome Website</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Website Title</note>
+      </trans-unit>
+      <trans-unit id="2444054146532510398" datatype="html">
+        <source> English</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">English Language Dropdown</note>
+      </trans-unit>
+      <trans-unit id="7941090461604249190" datatype="html">
+        <source>Hindi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Hindi Language Dropdown</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

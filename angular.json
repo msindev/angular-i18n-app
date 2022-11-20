@@ -33,7 +33,8 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "localize":true
           },
           "configurations": {
             "production": {
@@ -58,6 +59,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "hi":{
+              "localize":["hi"]
             }
           },
           "defaultConfiguration": "production"
@@ -70,6 +74,9 @@
             },
             "development": {
               "browserTarget": "angular-i18n-app:build:development"
+            },
+            "hi":{
+              "browserTarget":"angular-i18n-app:build:development,hi"
             }
           },
           "defaultConfiguration": "development"
@@ -98,6 +105,14 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      },
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "hi":{
+            "translation":"src/locale/messages.hi.xlf"
           }
         }
       }

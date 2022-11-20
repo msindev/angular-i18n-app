@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  selectedLanguage = 'English';
+  availableLanguages = {
+    English: $localize`:English Language Dropdown: English`,
+    Hindi: $localize`:Hindi Language Dropdown:Hindi`,
+  };
+  availableLanguagesDropdown = Object.values(this.availableLanguages);
+  selectedLanguage = this.availableLanguages.English;
 }
